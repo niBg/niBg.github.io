@@ -86,34 +86,9 @@ ga('send', 'pageview');
 <div class="header-link-col">
 <span class="tel-wrapper header-inspector"><a class="tel" href="tel:770.483.2808" data-link="/request-home-inspection">I need a Home Inspection<strong>770.483.2808</strong><strong><small>Call or Text</small></strong></a></span>
 <span class="tel-wrapper header-locksmith"><a class="tel" href="tel:770.483.2420" data-link="/quick-quote">I need locksmith Services<strong>770.483.2420</strong><strong><small>Call or Text</small></strong></a></span>
-<span class="header-chat"><a href="#"><i class="fa fa-comment"></i> Live Chat</a></span>
+<span class="header-chat"><a href="#"><i class="fa fa-comment"></i> </a></span>
 
-<script type="text/javascript">
-					  (function() {
-					    var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
-					    se.src = '//storage.googleapis.com/code.snapengage.com/js/637bc238-ff70-4184-8828-e6c114fb1177.js';
-					    var done = false;
-					    se.onload = se.onreadystatechange = function() {
-					      if (!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete')) {
-					        done = true;
-					        /* Place your SnapEngage JS API code below */
-					        /* SnapEngage.allowChatSound(true); Example JS API: Enable sounds for Visitors. */
-					        //*** Live Chat Change Link when Offline *************************//
-							SnapEngage.getAgentStatusAsync(function (online) {
-							    if(online) {
-							    	$('#SnapABug_Button').addClass('chat-available');
-							        $('.header-chat a').html('<i class="fa fa-comment"></i> Live Chat');
-							    } else {
-							        // Chat not available.
-							        $('#SnapABug_Button').addClass('chat-not-available');
-							        $('.header-chat a').html('<i class="fa fa-envelope"></i> Email Us');
-							    }
-							});
-					      }
-					    };
-					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
-					  })();
-					</script>
+
 
 </div>
 <div class="navigation fluid-nav">
